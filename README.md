@@ -1,11 +1,11 @@
 # 3D Hike Map
-After completing a multi-day hike I did with my family in the Austrian Alps I felt inspired by [Elizabeth Easter](https://github.com/edeaster/Routes3D) to visualize our four-day trek above the valley floor and eventually up the glacier to the summit of the Groﬂvenediger (3666m a.s.l.) using R and Rayshader
+After completing a multi-day hike I did with my family in the Austrian Alps I felt inspired by [Elizabeth Easter](https://github.com/edeaster/Routes3D) to visualize our four-day trek above the valley floor and eventually up the glacier to the summit of the Gro√üvenediger (3666m a.s.l.) using R and Rayshader
 
 ![Grossvenediger Route Demo](demo/hike_route.gif)
 
 # GPS Route
 I did not track the route using a smartwatch in this case as I do not own one, I have simply created a route on [Alpenvereinaktiv.de](https://www.alpenvereinaktiv.com/de/tour/huettentour-grossvenediger-ueber-hoeheweg/120138373/) 
-From there the .gpx file is available for download.
+From there the .gpx file is available for download. However, you can easily modify this script to accept .gpx files exported from your phone, watch or GPS device.
 
 # Creating 3D Environment
 A rectangular bounding box is created around the coordinates of the gps route. To create a 3D representation of the mountains, elevation data is downloaded from [Amazon Web Services Terrain Tiles](https://aws.amazon.com/public-datasets/terrain/) using the `elevatr` package
