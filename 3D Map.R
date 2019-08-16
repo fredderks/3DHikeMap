@@ -32,7 +32,7 @@ gpx <- gpx.df$tracks %>%
   as.data.frame()
 
 # Convert column classes 
-gpx[1:3] = as.numeric(unlist(gpx[1:3]))
+gpx[1:3] <- as.numeric(unlist(gpx[1:3]))
 colnames(gpx) <- c("lon","lat","ele")
 
 # Find Bounding Box
